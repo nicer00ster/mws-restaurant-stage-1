@@ -24,9 +24,12 @@ ul, li {
 a {
 	color: orange;
 	text-decoration: none;
+	transition: all 0.25s;
 }
 a:hover, a:focus {
 	color: #3397db;
+	font-weight: bolder;
+	letter-spacing: 12px;
 	text-decoration: none;
 }
 a img{
@@ -48,7 +51,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 	position: relative;
 	width: 100%;
   background-color: #444;
-  color: #aaa;
+  color: #fefefe;
   font-size: 8pt;
   letter-spacing: 1px;
   padding: 25px;
@@ -123,14 +126,14 @@ nav h1 a {
   align-items: center;
 }
 .filter-options h2 {
-  color: white;
+  color: #333;
   font-size: 1rem;
   font-weight: normal;
   line-height: 4;
   margin: 0 20px;
 }
 .filter-options select {
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
   font-size: 11pt;
@@ -191,7 +194,7 @@ nav h1 a {
 #restaurants-list li a {
   background-color: orange;
   border-bottom: 3px solid #eee;
-  color: #fff;
+  color: #333;
   display: inline-block;
   font-size: 10pt;
   margin: 15px 0 0;
@@ -199,6 +202,11 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+	transition: all 0.25s;
+}
+#restaurants-list li a:hover, #restaurants-list li a:focus {
+	background-color: skyblue;
+	color: #fefefe;
 }
 
 /* ====================== Restaurant Details ====================== */
@@ -327,7 +335,7 @@ nav h1 a {
 	border-radius: 4px;
 	letter-spacing: 2.5px;
 	background-color: orange;
-	color: white;
+	color: #333;
 	width: 50%;
 }
 #reviews-list li p:last-child {
